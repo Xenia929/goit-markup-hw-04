@@ -210,6 +210,9 @@ body {
 .section-hero {
     padding-top: 192px;
     padding-bottom: 192px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/bg.jpg);
+    background-size: cover;
+    background-color: #2E2F42;
 }
 
 .hero-content {
@@ -244,6 +247,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 /* ======================== /HERO ======================== */
 
 /* ======================== ABOUT ======================== */
@@ -251,6 +260,17 @@ body {
     padding-top: 120px;
 }
 
+/* .section-content-wrapper::before {
+    content: "";
+    display: block;
+    width: 264px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+
+} */
 
 .plus-list {
     display: flex;
@@ -337,14 +357,85 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--primary-secondary-color);
+    margin-bottom: 8px;
 }
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
 /* ======================== /OUR TEAM ======================== */
+
+/* ======================== CUSTOMERS ======================== */
+.customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customers-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.customers-list-icon {
+    fill: #8E8F99;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+    border-color: #4D5AE5;
+}
+
+.customers-list-icon:hover,
+.customers-list-icon:focus {
+    fill: #4D5AE5 ;
+}
+
+
+/* ======================== /CUSTOMERS ======================== */
 
 /* ======================== FOOTER ======================== */
 .footer {
     background-color: var(--primary-text-color);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-content-first-part {
+    width: 264px;
+    margin-right: 120px;
+}
+
+.footer-content-second-part {
+    width: 208px;
 }
 
 .footer-desc {
@@ -362,6 +453,24 @@ body {
 .footer-desc {
     width: 264px;
     margin-top: 16px;
+}
+
+.footer-second-part-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer .social-list-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-list-link:hover,
+.social-list-link:focus {
+    background-color: #31D0AA;
 }
 /* ======================== /FOOTER ======================== */
 
@@ -403,6 +512,8 @@ body {
 .filter-btn:focus {
     color: #FFFFFF;
     background-color: var(--primary-third-color);
+    border: 1px solid var(--primary-third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .active {
