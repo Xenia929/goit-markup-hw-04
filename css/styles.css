@@ -580,8 +580,12 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.examples-item:hover,
-.examples-item:focus {
+.examples-item-link{
+    display: block;
+}
+
+.examples-item-link:hover,
+.examples-item-link:focus {
     box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16);
 }
 
@@ -631,6 +635,7 @@ body {
     background-color: #4D5AE5;
     padding-left: 32px;
     padding-top: 40px;
+    padding-bottom: 40px;
     padding-right: 32px;
     top: 0;
     left: 0;
